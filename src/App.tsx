@@ -8,7 +8,7 @@ function App() {
   }, []);
 
   const fetchResults = async () => {
-    const response = await fetch('http://localhost:8082/api/results');
+    const response = await fetch('http://localhost:8080/api/results');
     const data = await response.json();
     setResults(data);
   };
